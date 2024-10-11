@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Features, Footer, Hero } from '@components';
+import { Navbar, Features, Footer, Hero, Contact, Services} from '@components';
 
 const Landing: React.FC = () => {
     return (
@@ -7,6 +7,8 @@ const Landing: React.FC = () => {
             <Navbar />
             <Hero />
             <Features />
+            <Contact />
+            <Services />
             <Footer />
         </>
     );
