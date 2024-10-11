@@ -1,11 +1,12 @@
 import React from 'react';
-import { Navbar, Features, Services,Footer } from '@components';
+import { Navbar, Features, Footer, Contact, Services} from '@components';
 
 const Landing: React.FC = () => {
     return (
         <>
             <Navbar />
             <Features />
+            <Contact />
             <Services />
             <Footer />
         </>
