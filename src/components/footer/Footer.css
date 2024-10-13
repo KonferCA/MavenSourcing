@@ -1,5 +1,5 @@
 .footer {
-    background-color: #2b2d42;
+    background-color: black;
     color: white;
     padding: 2rem 0;
 }
@@ -16,7 +16,7 @@
 .footer-copyright {
     margin: 0;
     font-size: 1.4rem;
-    color: #8d99ae;
+    color: white;
     text-align: center;
 }
 
