@@ -23,6 +23,14 @@
     object-fit: cover;
 }
 
+.feature-image-valiant {
+    object-position: right center;
+}
+
+.feature-image-noble {
+    object-position: left center;
+}
+
 .feature-content {
     padding: 1.5rem;
     text-align: center;
@@ -58,8 +66,14 @@
     line-height: 1.6;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1048px) {
     .features-container {
         grid-template-columns: 1fr;
+    }
+
+    .feature {
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

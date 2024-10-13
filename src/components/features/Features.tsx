@@ -6,11 +6,12 @@ interface FeatureProps {
     title: string;
     description: string;
     image: string;
+    imageClass?: string;
 }
 
-const Feature: React.FC<FeatureProps> = ({ title, description, image }) => (
+const Feature: React.FC<FeatureProps> = ({ title, description, image, imageClass }) => (
     <div className="feature">
-        <img src={image} alt={title} className="feature-image" />
+        <img src={image} alt={title} className={`feature-image ${imageClass || ''}`} />
         <div className="feature-content">
             <h2>{title}</h2>
             <p>{description}</p>
@@ -29,11 +30,13 @@ const Features: React.FC = () => (
             title="Valiant"
             description="We've successfully served diverse clients, taking calculated risks. We handle any client with any sourcing requirement."
             image={rocksImage}
+            imageClass="feature-image-valiant"
         />
         <Feature
             title="Noble"
             description="Integrity is our core value. We prioritize honesty and transparency in all our dealings."
             image={owlImage}
+            imageClass="feature-image-noble"
         />
     </section>
 );
