@@ -29,7 +29,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .service-card {
@@ -42,8 +42,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: calc(50% - 1rem);
+    width: calc(50% - 2rem);
     max-width: 500px;
+    margin-bottom: 2rem;
 }
 
 .service-card:hover {
@@ -89,12 +90,18 @@
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .services-container {
         padding: 4rem 1.5rem;
     }
 
     .service-card {
         width: 100%;
+        max-width: 500px;
+        margin-bottom: 3rem;
+    }
+
+    .services-list {
+        gap: 4rem;
     }
 }
