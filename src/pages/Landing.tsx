@@ -7,8 +7,8 @@ const Landing: React.FC = () => {
             <Navbar />
             <Hero />
             <Features />
-            <Contact />
             <Services />
+            <Contact />
             <Footer />
         </>
     );
