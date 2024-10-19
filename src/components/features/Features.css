@@ -1,6 +1,6 @@
 .features-container {
-    max-width: 1400px;
-    margin: 4rem auto;
+    max-width: 1200px;
+    margin: 6rem auto;
     padding: 0 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -15,6 +15,12 @@
     border: 1px solid #e0e0e0;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(43, 45, 66, 0.2);
 }
 
 .feature-image {
@@ -38,6 +44,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.feature-content h2 {
+    margin-bottom: 1rem;
+}
+
+.feature-content p {
+    margin-bottom: 0;
 }
 
 .feature h2 {
