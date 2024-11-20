@@ -29,11 +29,8 @@ const Navbar: React.FC = () => {
                 <Link
                     to="maven"
                     className="logo"
-                    spy={true}
-                    smooth={true}
-                    offset={-60}
-                    duration={500}
                     style={{ cursor: "pointer" }}
+                    duration={500}
                 >
                     <img src={Logo} alt="logo" />
                 </Link>
@@ -51,12 +48,10 @@ const Navbar: React.FC = () => {
                         <li key={item.to} className="item">
                             <Link
                                 to={item.to}
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
                                 style={{ cursor: "pointer" }}
                                 onClick={closeMenu}
+                                offset={-120}
+                                duration={500}
                             >
                                 {item.name}
                             </Link>
